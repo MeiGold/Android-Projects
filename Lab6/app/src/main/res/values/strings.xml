@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lab6</string>
+    <string name="btn_dest">Geocode</string>
+    <string name="address">Address:</string>
+    <string name="coords">Coordinates:</string>
+    <string name="confirm_btn">Confirm</string>
+    <string name="loading">Loading...</string>
+    <string name="distance_to_des">Distance left:</string>
+    <string name="set_dest_pls">0</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="press_check">Press Geocode to decode your coordinates</string>
+    <string name="check_btn">Geocode</string>
+    <string name="author_info_btn">Info</string>
+</resources>

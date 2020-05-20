@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="show_info">Show Info</string>
+    <string name="yurkevych_bohdan_mykhailovych_3_course_ttp_3">Yurkevych Bohdan Mykhailovych, 3 course, TTP-3</string>
+    <string name="taras_shevchenko_national_university_of_kyiv_cybernetics_department">Taras Shevchenko National University of Kyiv, Cybernetics Department</string>
+    <string name="hide_info">Hide Info</string>
+    <string name="x">x =</string>
+    <string name="a">a =</string>
+    <string name="c">c =</string>
+    <string name="calculate">Calculate</string>
+    <string name="l_0">L = 0</string>
+    <string name="parameters">Parameters</string>
+    <string name="equation">Equation</string>
+    <string name="my_avatar">My avatar</string>
+    <string name="k_0">K = 0</string>
+    <string name="x_variable">x variable</string>
+</resources>

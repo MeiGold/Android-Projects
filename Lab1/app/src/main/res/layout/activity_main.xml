@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ToggleButton
+        android:id="@+id/toggleButtonShowInfo"
+        android:layout_width="152dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:checked="false"
+        android:onClick="clickInfo"
+        android:text="@string/togglebutton"
+        android:textOff="@string/show_info"
+        android:textOn="@string/hide_info"
+        app:layout_constraintBottom_toTopOf="@+id/scrollViewInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutResult" />
+
+    <ScrollView
+        android:id="@+id/scrollViewInfo"
+        android:layout_width="364dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="25dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonShowInfo"
+        tools:visibility="invisible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textNameSurname"
+                android:layout_width="358dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="6dp"
+                android:text="@string/yurkevych_bohdan_mykhailovych_3_course_ttp_3"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textUniversityInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/taras_shevchenko_national_university_of_kyiv_cybernetics_department"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.013"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textNameSurname" />
+
+            <ImageView
+                android:id="@+id/imageAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="134dp"
+                android:contentDescription="@string/my_avatar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textUniversityInfo"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/avatar" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutResult"
+        android:layout_width="409dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/toggleButtonShowInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutInput">
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="214dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="9dp"
+            android:text="@string/k_0"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="135dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="40dp"
+            android:background="@android:drawable/button_onoff_indicator_on"
+            android:onClick="calculateExpression"
+            android:text="@string/calculate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutInput"
+        android:layout_width="409dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageEquation">
+
+        <TextView
+            android:id="@+id/textParameters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="155dp"
+            android:text="@string/parameters"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textX"
+            android:layout_width="51dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="68dp"
+            android:text="@string/x"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/inputParameterX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="42dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/x_variable"
+            android:inputType="numberSigned|numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/textX"
+            app:layout_constraintTop_toBottomOf="@+id/textParameters"
+            tools:targetApi="o" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageEquation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="14dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/equation"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51"
+        app:srcCompat="@drawable/equation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
